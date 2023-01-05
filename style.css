@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    height: 100vh;
+    font-family: "poppins";
+}
+
+.carte{
+    width: 330px;
+    height: 580px;
+    margin: 0 auto;
+    background: #f1f1f1f1;
+    display: grid;
+    grid-template: repeat(2,100px) 50px repeat(2,100px) 80px / repeat(3, 110px);
+    border-radius: 5px;
+}
+
+.divimg{
+    grid-column:1 / -1;
+    grid-row: 1 / 3;  
+}
+
+
+.divimg img{
+    width: 100%;
+    height: 12.5em;
+    background-image: url("../img/tarte.png");
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(75%);
+    box-shadow: 0px 10px 40px rgba(0,0,0,5);
+}
+
+.titre{
+    grid-column:1 / -1;
+    grid-row: 3 / 4; 
+    /*background-color: #bf3030;*/
+    font-size: 24px;
+    font-weight: 500px;
+    padding: 20px;
+}
+
+hr{
+    opacity: 0,8;
+}
+
+.tab_nim,.tab_igr,.per{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icone{
+    width: 29px;
+    margin-right: 10px;
+}
+
+span{
+    font-weight: 600;
+}
+
+.info{
+    grid-column:1 / -1;
+    grid-row: 5 / 6;
+    padding: 5px 25px;
+    text-align:center;
+}
+
+.btn{
+    grid-column:1 / -1;
+    grid-row: 7 /8;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn a{
+    width: 200px;
+    height: 30px;
+    background-color:rgb(241, 33, 68) /*#a82c2c rgb(241,31,67*/;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 3px;
+}
